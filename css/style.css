@@ -9,3 +9,28 @@ section img{
   width:auto;
   height: auto;
 }
+
+
+
+/* -----------------------
+Layout
+--------------------------*/
+
+.wrap {
+  max-width:1000px;
+  width: 100%;
+  //I think this makes everything centered
+  margin: 0 auto;
+}
+
+.grid-wrapper{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.column3{
+  width:30%;
+}
