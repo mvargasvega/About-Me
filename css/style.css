@@ -1,13 +1,5 @@
-.PhotoSlider{
-  height: 500px;
-  width: 500px;
-  background-color: blue;
-
-}
-
-section img{
-  width:auto;
-  height: auto;
+*{
+  box-sizing: border-box;
 }
 
 
@@ -17,13 +9,12 @@ Layout
 --------------------------*/
 
 .wrap {
-  max-width:1000px;
   width: 100%;
   //I think this makes everything centered
   margin: 0 auto;
 }
 
-.grid-wrapper{
+.flex-wrapper{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -33,4 +24,42 @@ Layout
 
 .column3{
   width:30%;
+}
+/*used to creat the gride for stuff*/
+.container{
+  background-color:  #D1C4E9;
+  display: grid;
+  grid-gap: 10px;
+}
+
+.testItem{
+  background-color: #673AB7;
+  color: #fff;
+  padding: 5px;
+}
+
+/* -----------------------
+Nav
+--------------------------*/
+/*to create a 3 column nav with the css grid container in layout*/
+.reponsiveHead{
+grid-template-columns: repeat(3, minmax(100px,33%));
+padding: 10px;
+}
+.reponsiveNav{
+grid-template-columns: repeat(6, minmax(100px,16%));
+padding: 10px;
+}
+
+
+.PhotoSlider{
+  height: auto;
+  width: auto;
+  background-color: blue;
+
+}
+
+section img{
+  width:auto;
+  height: auto;
 }
