@@ -3,6 +3,14 @@
 }
 
 
+body{
+margin: 0;
+text-align: center;
+}
+
+img{
+  max-width: 100%;
+}
 
 /* -----------------------
 Layout
@@ -49,6 +57,15 @@ padding: 10px;
 .reponsiveNav{
 grid-template-columns: repeat(6, minmax(100px,16%));
 padding: 10px;
+}
+
+.column1{
+  grid-template-rows: repeat(1, minmax(100px,100%));
+  padding: 10px
+}
+.column2{
+  grid-template-columns: repeat(2,minmax(100px,50%));
+  padding: 10px;
 }
 
 
