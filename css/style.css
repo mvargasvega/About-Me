@@ -6,6 +6,7 @@
 body{
 margin: 0;
 text-align: center;
+color: black;
 }
 
 img{
@@ -35,6 +36,13 @@ Layout
   grid-gap: 10px;
 }
 
+.container1{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 20% auto 20%;
+  grid-template-rows: auto;
+}
+
 .testItem{
   background-color: #673AB7;
   color: #fff;
@@ -44,12 +52,21 @@ Layout
 /* -----------------------
 Nav
 --------------------------*/
+.largeIcon{
+  font-size: 45px;
+}
+
+
+/* -----------------------
+Grid
+--------------------------*/
+
 /*to create a 3 column nav with the css grid container in layout*/
-.reponsiveHead{
+.column3{
 grid-template-columns: repeat(3, minmax(100px,33%));
 padding: 10px;
 }
-.reponsiveNav{
+.column6{
 grid-template-columns: repeat(6, minmax(100px,16%));
 padding: 10px;
 }
@@ -68,6 +85,13 @@ padding: 10px;
   padding: 10px;
 }
 
+.columnOneForth{
+  width: 25%;
+}
+
+.smallBox{
+  width: calc(100% * (1/6) - 21px);
+}
 
 .PhotoSlider{
   height: auto;
